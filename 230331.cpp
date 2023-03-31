@@ -22,7 +22,15 @@ int main()
 	{
 		for (int X = 0; X < 10; X++)
 		{
-			cout << Map[Y][X];
+			if (Map[Y][X] == 1)
+			{
+				cout << "#";
+			}
+			else if (Map[Y][X] == 0)
+			{
+				cout << ' ';
+			}
+			
 		}
 		cout << '\n';
 	}
